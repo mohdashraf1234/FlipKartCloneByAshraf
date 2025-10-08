@@ -5,261 +5,359 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first shopping site website, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title>
+    <title>Flipkart - Online Shopping Site for Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utils.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <nav>
-            <div class="logo">
-                <img src="logo.png" alt="">
-            </div>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="search">
-                <input type="text" name="" id="" placeholder="Search Here">
-                <button class="btn">Search</button>
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="Flipkart Logo">
+                    <div class="logo-text">
+                        <span>Explore <span class="plus">Plus</span></span>
+                        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" alt="Plus">
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more" class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="nav-links">
+                    <div class="nav-item dropdown">
+                        <button class="nav-btn">Login</button>
+                        <div class="dropdown-content">
+                            <div class="dropdown-section">
+                                <h4>New Customer?</h4>
+                                <a href="#" class="signup-link">Sign Up</a>
+                            </div>
+                            <div class="dropdown-section">
+                                <a href="#"><i class="fas fa-user"></i> My Profile</a>
+                                <a href="#"><i class="fas fa-plus-circle"></i> Flipkart Plus Zone</a>
+                                <a href="#"><i class="fas fa-shopping-bag"></i> Orders</a>
+                                <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                                <a href="#"><i class="fas fa-gift"></i> Rewards</a>
+                                <a href="#"><i class="fas fa-wallet"></i> Gift Cards</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-btn">Become a Seller</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <button class="nav-btn">More</button>
+                        <div class="dropdown-content">
+                            <a href="#"><i class="fas fa-bell"></i> Notification Preferences</a>
+                            <a href="#"><i class="fas fa-question-circle"></i> 24x7 Customer Care</a>
+                            <a href="#"><i class="fas fa-chart-line"></i> Advertise</a>
+                            <a href="#"><i class="fas fa-download"></i> Download App</a>
+                        </div>
+                    </div>
+                    <div class="nav-item cart">
+                        <a href="#" class="nav-btn">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </nav>
+
+        <!-- Categories -->
+        <div class="categories">
+            <div class="category-container">
+                <a href="#" class="category-item">
+                    <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="Grocery">
+                    <span>Grocery</span>
+                </a>
+                <a href="#" class="category-item">
+                    <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" alt="Mobiles">
+                    <span>Mobiles</span>
+                </a>
+                <a href="#" class="category-item">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100" alt="Fashion">
+                    <span>Fashion</span>
+                </a>
+                <a href="#" class="category-item">
+                    <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="Electronics">
+                    <span>Electronics</span>
+                </a>
+                <a href="#" class="category-item">
+                    <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt="Home & Furniture">
+                    <span>Home & Furniture</span>
+                </a>
+                <a href="#" class="category-item">
+                    <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt="Appliances">
+                    <span>Appliances</span>
+                </a>
+                <a href="#" class="category-item">
+                    <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" alt="Travel">
+                    <span>Travel</span>
+                </a>
+                <a href="#" class="category-item">
+                    <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" alt="Beauty, Toys & More">
+                    <span>Beauty, Toys & More</span>
+                </a>
+            </div>
+        </div>
     </header>
+
     <main>
-        <div class="container">
-            <div class="slider">
-                <img src="https://source.unsplash.com/1600x500/?shopping,ecommerce" alt="">
+        <!-- Hero Banner -->
+        <div class="hero-banner">
+            <div class="banner-container">
+                <div class="banner-slider">
+                    <div class="slide active">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/53d5d6c6eec7c0b6.jpg?q=20" alt="Banner 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/5bb6b5ed6b85cf32.jpg?q=20" alt="Banner 2">
+                    </div>
+                    <div class="slide">
+                        <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/9bb7e5e0e5e34785.jpg?q=20" alt="Banner 3">
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
             </div>
+        </div>
 
-            <div class="card">
-                <h2 class="my-2">Join the cricket fun</h2>
-                <div class="cards">
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?cricket,keeping" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
+        <!-- Deals Section -->
+        <div class="deals-section">
+            <div class="container">
+                <h2 class="section-title">Deals of the Day</h2>
+                <div class="deals-container">
+                    <div class="deal-item">
+                        <img src="https://rukminim1.flixcart.com/image/200/200/kqidx8w0/mobile/z/h/x/galaxy-f12-sm-f127gzkuins-samsung-original-imag4g6f2s9t9jgh.jpeg?q=70" alt="Samsung Mobile">
+                        <div class="deal-info">
+                            <h3>Samsung Galaxy F12</h3>
+                            <p class="deal-price">From ₹8,999</p>
+                            <p class="deal-discount">20% off</p>
                         </div>
                     </div>
-
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?cricket,gloves" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
+                    <div class="deal-item">
+                        <img src="https://rukminim1.flixcart.com/image/200/200/kn22m4w0/television/z/h/9/samsung-ua32t4340akxxl-original-imagftk7g9p6tghz.jpeg?q=70" alt="Samsung TV">
+                        <div class="deal-info">
+                            <h3>Samsung 32 inch TV</h3>
+                            <p class="deal-price">₹15,499</p>
+                            <p class="deal-discount">25% off</p>
                         </div>
                     </div>
-
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?cricket,stumps" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
+                    <div class="deal-item">
+                        <img src="https://rukminim1.flixcart.com/image/200/200/kqgyhe80/shoe/l/z/g/667-reebok-6-original-imag4g6g2fhg7zjg.jpeg?q=70" alt="Reebok Shoes">
+                        <div class="deal-info">
+                            <h3>Reebok Sports Shoes</h3>
+                            <p class="deal-price">₹1,799</p>
+                            <p class="deal-discount">60% off</p>
                         </div>
                     </div>
-
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?cricket,ball" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
+                    <div class="deal-item">
+                        <img src="https://rukminim1.flixcart.com/image/200/200/kqgyhe80/shoe/l/z/g/667-reebok-6-original-imag4g6g2fhg7zjg.jpeg?q=70" alt="Reebok Shoes">
+                        <div class="deal-info">
+                            <h3>Reebok Sports Shoes</h3>
+                            <p class="deal-price">₹1,799</p>
+                            <p class="deal-discount">60% off</p>
                         </div>
                     </div>
-
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?cricket,bat" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
+                    <div class="deal-item">
+                        <img src="https://rukminim1.flixcart.com/image/200/200/kqgyhe80/shoe/l/z/g/667-reebok-6-original-imag4g6g2fhg7zjg.jpeg?q=70" alt="Reebok Shoes">
+                        <div class="deal-info">
+                            <h3>Reebok Sports Shoes</h3>
+                            <p class="deal-price">₹1,799</p>
+                            <p class="deal-discount">60% off</p>
                         </div>
                     </div>
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?cricket,bat,ball" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?cricket,bat,boundary" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?bat,pad" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
+                    <div class="deal-item">
+                        <img src="https://rukminim1.flixcart.com/image/200/200/kqgyhe80/shoe/l/z/g/667-reebok-6-original-imag4g6g2fhg7zjg.jpeg?q=70" alt="Reebok Shoes">
+                        <div class="deal-info">
+                            <h3>Reebok Sports Shoes</h3>
+                            <p class="deal-price">₹1,799</p>
+                            <p class="deal-discount">60% off</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="card">
-                <h2 class="my-2">Furniture Bestsellers</h2>
-                <div class="cards">
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?furniture" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?furniture,wood" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?wood,stumps" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?sofa" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
+        <!-- Product Categories -->
+        <div class="product-categories">
+            <div class="container">
+                <h2 class="section-title">Top Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <h3>Join the cricket fun</h3>
+                        <div class="category-products">
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?cricket,keeping" alt="Cricket Keeping">
+                                <p>Cricket Bats</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?cricket,gloves" alt="Cricket Gloves">
+                                <p>Cricket Gloves</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?cricket,stumps" alt="Cricket Stumps">
+                                <p>Cricket Stumps</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?cricket,ball" alt="Cricket Ball">
+                                <p>Cricket Balls</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?chair" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?dining,chair" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?cricket,bat" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?cricket,bat" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h2 class="my-2">Best Battery Phones</h2>
-                <div class="cards">
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?phone,battery" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
+                    <div class="category-card">
+                        <h3>Furniture Bestsellers</h3>
+                        <div class="category-products">
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?furniture" alt="Furniture">
+                                <p>Wooden Furniture</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?furniture,wood" alt="Wood Furniture">
+                                <p>Wooden Chairs</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?sofa" alt="Sofa">
+                                <p>Sofas</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?chair" alt="Chair">
+                                <p>Office Chairs</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?battery,mobile" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?mobile,phone" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?phone" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?phone,cable" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?phone,charging" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?mobile" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
-                        </div>
-                    </div>
-                    <div class="card-item">
-                        <img src="https://source.unsplash.com/160x160/?telephone" alt="" width="200px">
-                        <div class="lines">
-                            <p class="text-center my-1">Cricket Bats</p>
-                            <p class="text-center my-1">Min 20% off</p>
-                            <p class="text-center my-1">Grab Now!</p>
+                    <div class="category-card">
+                        <h3>Best Battery Phones</h3>
+                        <div class="category-products">
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?phone,battery" alt="Phone Battery">
+                                <p>Smartphones</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?battery,mobile" alt="Mobile Battery">
+                                <p>Power Banks</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?mobile,phone" alt="Mobile Phone">
+                                <p>Latest Mobiles</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
+                            <div class="product-item">
+                                <img src="https://source.unsplash.com/160x160/?phone" alt="Phone">
+                                <p>Accessories</p>
+                                <p class="discount">Min 20% off</p>
+                                <p class="action">Grab Now!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="flex-all-center">
-        <p>Copyright &copy; shopping2024 </p>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Flipkart Stories</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Flipkart Wholesale</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>HELP</h4>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Report Infringement</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>POLICY</h4>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>SOCIAL</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="footer-section address">
+                <h4>Mail Us:</h4>
+                <p>Flipkart Internet Private Limited,</p>
+                <p>Buildings Alyssa, Begonia &</p>
+                <p>Clove Embassy Tech Village,</p>
+                <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                <p>Bengaluru, 560103,</p>
+                <p>Karnataka, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-briefcase"></i> Sell On Flipkart</a>
+                    <a href="#"><i class="fas fa-star"></i> Advertise</a>
+                    <a href="#"><i class="fas fa-gift"></i> Gift Cards</a>
+                    <a href="#"><i class="fas fa-question-circle"></i> Help Center</a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Flipkart Clone. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
